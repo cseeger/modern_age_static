@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Modern Age | Cover Band</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .bg-cover-band {
+      background-image: url('smoke_stage_optimized.jpeg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white flex flex-col min-h-screen bg-cover-band">
+  <div class="flex-grow bg-black bg-opacity-60">
+    <header class="max-w-3xl mx-auto pt-12 md:pt-20 px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-3">The Modern Age</h1>
+      <p class="text-xl italic text-indigo-400 mb-6">
+        Your local Bay Area cover band.
+      </p>
+    </header>
+
+    <main class="max-w-2xl mx-auto px-6 text-center">
+      <p class="mb-8 text-white text-lg">
+        True covers of rock and pop favorites from across the decades.<br />
+        Now booking live events, private parties, and special occasions.
+      </p>
+      <a
+        href="https://form.typeform.com/to/H3py8YkN"
+        class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300"
+      >
+        Booking and Contact
+      </a>
+    </main>
+  </div>
+
+  <footer class="text-center py-6 text-sm text-gray-400 bg-black bg-opacity-60">
+    &copy; <span id="year"></span> The Modern Age. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
